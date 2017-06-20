@@ -1,0 +1,72 @@
+<link rel="stylesheet" type="text/css" href="./css/cart.css" />
+<div class="cart_h">
+	<p>购物车</p>
+</div>
+<div class="empty-notice" ng-show="!status">
+			<div class="pic"></div>
+			<div class="text">亲，购物车空空的耶~</div>
+			<a href="#/home">去逛逛</a>
+		</div>
+<div class="cart_body" ng-show="status">
+	<div class="cart_loc">
+		<P>鲜蜂侠需要你的精确坐标</p>
+	</div>
+	<div class="shan_cart">
+		<div class="shan_top">
+			<div class="yellow_line"></div>
+			<span>闪送超市</span>
+		</div>
+		<div class="shan_b">111111111111111111111111</div>
+	</div>
+	<div class='cart_time'>
+		<span class="time_in">收货时间</span>
+		<span class="time1">一小时送达</span>
+		<span class="cart_res">可预订&gt;</span>
+	</div>
+	<div class='remarks'>
+		<span class='remarks_text'>收货备注</span>
+		<input type="text" placeholder="可输入100字以内特殊要求内容"/>
+	</div>
+	<div class="cart_list">
+		<div class="list_in" style="position: relative;" ng-repeat='(key,i) in list'>
+			<div class="list_right"  ng-click="selectFns()">
+				<label class="lable_y">
+				<input type="checkbox" ng-model="i.selec"/>
+				<div class="check_img"></div>
+				</label>
+			</div>
+			<div class="list_img">
+				<img ng-src="{{i.img}}"/>
+			</div>
+			<div class="list_text">
+				<p>{{i.name}}</p>
+				<p>￥{{i.price}}</p>
+			</div>
+			<div class="m_num">
+				<div class="nums" ng-show="i.num>0" ng-click="compute(i,-1,key)">
+					<span>-</span>
+				</div>
+				<div>
+					<span ng-show="i.num>0">{{i.num}}</span>
+				</div>
+				<div class="nums" ng-click="compute(i,1,key)">
+					<span>+</span>
+				</div>
+			</div>
+		</div>
+		<div class="submit">
+			<div class="list_right"  ng-click="selectAll()">
+				<label class="lable_y">
+				<input type="checkbox" ng-model="selectBtn"/>
+				<div class="check_img"></div>
+				</label>
+			</div>
+			<div class="submit_text">
+				<span>全选</span>
+				<span class="add">共：</span>
+				<span style="color: #e64f1a;">￥{{priceAll}}</span>
+			</div>
+			<button class="btn_check">选好了</button>
+		</div>
+	</div>
+</div>

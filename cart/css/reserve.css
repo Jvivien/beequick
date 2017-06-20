@@ -1,0 +1,132 @@
+.header{
+	display: none;
+}
+#app{
+	background: #eeeef0;
+}
+.res_head{
+	position: absolute;
+	top:0;
+	height:1.40625rem;
+	width: 100%;
+	background: #f9fafd;
+	border-bottom: solid 0.03125rem #e0e0e0;
+	display: flex;
+	align-items: center;
+}
+.res_head>p{
+	font-size: 0.40625rem;
+}
+.res_select{
+	position: absolute;
+	top:1.59375rem;
+	width: 100%;
+	height:2.109375rem;
+	border-top: solid 0.015625rem #a4a4a4;
+	border-bottom: solid 0.015625rem#a4a4a4;
+	background: #ffffff;
+}
+.select_ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+.select_ul>li{
+	width:20%;
+	height:1.046875rem;
+	line-height:1.046875rem;
+	border-bottom: solid 0.03125rem #d1d1d1;
+	text-align: center;
+	font-size: 0.359375rem;
+	color: #898989;
+}
+.res_body{
+	position: absolute;
+	top:4rem;
+	width:100%;
+	bottom: 1.5625rem;
+	border-top: solid 0.015625rem #a0a0a0;
+	background: #ffffff;
+}
+.res_title{
+	width:100%;
+	position: absolute;
+	top:0;
+	height:0.921875rem;
+	border-bottom: solid 0.03125rem #cccccc;
+	display: flex;
+	align-items: center;
+}
+.res_line{
+	height: 0.390625rem;
+	width:0.15625rem;
+	background: #2eaffd;
+	margin-left: 0.265625rem ;
+	
+}
+.res_fruit{
+	font-size: 0.359375rem;
+	color: #898989;
+	margin-left: 0.296875rem;
+	flex-grow: 1;
+}
+.res_inner{
+	width:100%;
+	position:absolute;
+	top:0.953125rem;
+	bottom: 0;
+	overflow-y: scroll;
+}
+.inner_list{
+	width:100%;
+	height: 3.5rem;
+	border-bottom: solid 0.03125rem #cccccc;
+	display: flex;
+}
+.res_img{
+	width:4.6875rem;
+	display: flex;
+}
+.res_img>img{
+	width:3.078125rem;
+}
+.res_right{
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction:column;
+}
+.res_right div{
+	font-size: 0.390625rem;
+	color: #777777;
+	width: 100%;
+}
+.ri_name{
+	
+}
+.ri_g{
+	margin-top: 0.21875rem;
+}
+.ri_money{
+}
+.money1{
+	font-size: 0.234375rem;
+	color: #f1361d;
+}
+.money2{
+	color: #f1361d;
+}
+.bott{
+	line-height:1.046875rem;
+}
+.bott:after{
+	content: "";
+	display: inline-block;
+	width:1.640625rem;
+	height: 0.03125rem;
+	background: #595656;
+	position: absolute;
+	left: 0.1875rem;
+	bottom: 0;
+}

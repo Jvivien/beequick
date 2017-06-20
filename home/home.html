@@ -1,0 +1,214 @@
+<!--body-->
+			<div class="body">
+				<!--轮播图-->
+				 
+		       <div class="slide">
+			    <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide" ng-repeat="i in data.slide"><img ng-src="{{i.activity.img}}" /></div>
+			    	</div>
+			    	 <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+  				</div>
+        		
+        	</div>
+				
+				<div>
+					<div class="list">
+						<ul>
+							<li ng-repeat='i in data.menu'>
+								<div class="list_img">
+									<img ng-src="{{i.activity.img}}" />
+								</div>
+								<div class="list_text">
+									<span>{{i.activity.name}}</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="line"></div>
+				</div>
+
+				<div class="headlines">
+					<div class="h_left">
+						<img src="img/未标题-1.png" />
+						<div class="vertical"></div>
+						<img src="img/未标题-1.jpg" />
+					</div>
+					<span class="right">防雾霾口罩3231小时闪送</span>
+				</div>
+				<div class="line"></div>
+				<div class="three">
+					<div>
+						<span class="t_name1">骑士酸牛奶</span><br/>
+						<span class="t_money">尝鲜价6.8元</span>
+						<img src="img/未标题1-1.jpg" />
+					</div>
+					<div>
+						<span class="t_name2">骑士酸牛奶</span><br/>
+						<span class="t_money">尝鲜价6.8元</span>
+						<img src="img/未标题1-1.jpg" />
+					</div>
+					<div>
+						<span class="t_name3">骑士酸牛奶</span><br/>
+						<span class="t_money">尝鲜价6.8元</span>
+						<img src="img/未标题1-1.jpg" />
+					</div>
+				</div>
+				<div class="line"></div>
+				<div class="four">
+					<div class="four_in">
+						<div>
+							<span class="f_name">天天特价</span><br/>
+							<span class="f_money1">农夫山泉0.9元</span>
+						</div>
+						<div class="four_img">
+							<img src="img/未标题2-2.jpg" />
+						</div>
+						<div>
+						</div>
+					</div>
+					<div class="four_in">
+						<div>
+							<span class="f_name">天天特价</span><br/>
+							<span class="f_money2">农夫山泉0.9元</span>
+						</div>
+						<div class="four_img">
+							<img src="img/未标题2-2.jpg" />
+						</div>
+					</div>
+					<div class="four_in">
+						<div>
+							<span class="f_name">天天特价</span><br/>
+							<span class="f_money3">农夫山泉0.9元</span>
+						</div>
+						<div class="four_img">
+							<img src="img/未标题2-2.jpg" />
+						</div>
+					</div>
+					<div class="four_in">
+						<div>
+							<span class="f_name">天天特价</span><br/>
+							<span class="f_money4">农夫山泉0.9元</span>
+						</div>
+						<div class="four_img">
+							<img src="img/未标题2-2.jpg" />
+						</div>
+					</div>
+				</div>
+				<div class="line"></div>
+                <!--优选水果-->
+                <div class="fruit">
+                	<div class="fruit_head">
+                		<div class="left_orange"></div>
+                		<span class="fruit_title">优选水果</span>
+                		<span class="fruit_more">更多</span>
+                		<img src="img/未标题3-1.jpg"/>
+                	</div>
+                	<div class="fruit_im">
+                		<img src="img/2016093011213251.jpg@90Q.jpg"/>
+                	</div>
+                	<div class="fruit_three">
+                		<div class="fruit_t_in">
+                			<img src="img/未标题4-1.jpg"/>
+                			<p class="three_f_name">蜂觅·15度蜜梨</p>
+                			<div class="selected">
+                				<img class="sle_img1" src="img/未标题5-1.jpg"/>
+                				<img class="sle_img2" src="img/未标题6-1.jpg"/>
+                			</div>
+                			<p class="money_gray">400-500/盒</p>
+                			<p class="money_bottom">
+                				<span>￥14.9</span>
+                				<span>$16</span>
+                			</p>
+                		</div>
+                		<div class="fruit_t_in" id="fruit_2">
+                			<img src="img/未标题4-1.jpg"/>
+                			<p class="three_f_name">蜂觅·15度蜜梨</p>
+                			<div class="selected">
+                				<img class="sle_img1" src="img/未标题5-1.jpg"/>
+                				<img class="sle_img2" src="img/未标题6-1.jpg"/>
+                			</div>
+                			<p class="money_gray">400-500/盒</p>
+                			<p class="money_bottom">
+                				<span>￥14.9</span>
+                				<span>$16</span>
+                			</p>
+                		</div>
+                		<div class="fruit_t_in">
+                			<img src="img/未标题4-1.jpg"/>
+                			<p class="three_f_name">蜂觅·15度蜜梨</p>
+                			<div class="selected">
+                				<img class="sle_img1" src="img/未标题5-1.jpg"/>
+                				<img class="sle_img2" src="img/未标题6-1.jpg"/>
+                			</div>
+                			<p class="money_gray">400-500/盒</p>
+                			<p class="money_bottom">
+                				<span>￥14.9</span>
+                				<span>$16</span>
+                			</p>
+                		</div>
+                	</div>
+                </div>
+                <div class="line"></div>
+                <!--优选水果-->
+                <div class="fruit">
+                	<div class="fruit_head">
+                		<div class="left_orange"></div>
+                		<span class="fruit_title">牛奶面包</span>
+                		<span class="fruit_more">更多</span>
+                		<img src="img/未标题3-1.jpg"/>
+                	</div>
+                	<div class="fruit_im">
+                		<img src="img/2016093011213251.jpg@90Q.jpg"/>
+                	</div>
+                	<div class="fruit_three">
+                		<div class="fruit_t_in">
+                			<img src="img/未标题4-1.jpg"/>
+                			<p class="three_f_name">蜂觅·15度蜜梨</p>
+                			<div class="selected">
+                				<img class="sle_img1" src="img/未标题5-1.jpg"/>
+                				<img class="sle_img2" src="img/未标题6-1.jpg"/>
+                			</div>
+                			<p class="money_gray">400-500/盒</p>
+                			<p class="money_bottom">
+                				<span>￥14.9</span>
+                				<span>$16</span>
+                			</p>
+                		</div>
+                		<div class="fruit_t_in" id="fruit_2">
+                			<img src="img/未标题4-1.jpg"/>
+                			<p class="three_f_name">蜂觅·15度蜜梨</p>
+                			<div class="selected">
+                				<img class="sle_img1" src="img/未标题5-1.jpg"/>
+                				<img class="sle_img2" src="img/未标题6-1.jpg"/>
+                			</div>
+                			<p class="money_gray">400-500/盒</p>
+                			<p class="money_bottom">
+                				<span>￥14.9</span>
+                				<span>$16</span>
+                			</p>
+                		</div>
+                		<div class="fruit_t_in">
+                			<img src="img/未标题4-1.jpg"/>
+                			<p class="three_f_name">蜂觅·15度蜜梨</p>
+                			<div class="selected">
+                				<img class="sle_img1" src="img/未标题5-1.jpg"/>
+                				<img class="sle_img2" src="img/未标题6-1.jpg"/>
+                			</div>
+                			<p class="money_gray">400-500/盒</p>
+                			<p class="money_bottom">
+                				<span>￥14.9</span>
+                				<span>$16</span>
+                			</p>
+                		</div>
+                	</div>
+                </div>
+                <div class="line"></div>
+                </div>
+                	
+                	
+			

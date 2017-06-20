@@ -1,0 +1,121 @@
+.header{
+	display: none;
+}
+.mine_head{
+	width: 100%;
+	height:3.125rem;
+	background: #ffd600;
+	display: flex;
+	align-items: center;
+}
+.headpic{
+	height: 1.875rem;
+	width: 1.875rem;
+	background: #ffffff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	margin-left: 0.46875rem;
+	margin-right: 0.234375rem;
+}
+.headpic>img{
+	width:70%;
+	height: 70%;
+}
+.mine_id{
+	flex-grow: 1;
+	height: 1.953125rem;
+}
+.mine_name{
+	font-size: 0.34375rem;
+	color: #fff;
+	margin-top: 0.375rem;
+}
+.mine_regist{
+	font-size: 0.296875rem;
+	color: #e64f1a;
+	background: #fff5bf;
+	width: 2.578125rem;
+	height:0.625rem;
+	line-height:0.625rem;
+	border-radius: .312rem;
+	text-align: center;
+	margin-left: 0;
+	margin-top: 0.375rem;
+}
+.mine_gt{
+	font-size: 0.65625rem;
+	margin-right: 0.625rem;
+	color: #fff;
+}
+.clellection{
+	width:100%;
+	height:1.09375rem;
+	background: #f3c800;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+.shop_clell{
+	display: flex;
+	align-items: ;
+}
+.goods_clell{
+	display: flex;
+}
+.clellection span{
+	margin-left: 0.390625rem;
+}
+.clell_line{
+	height:0.65625rem;
+	width:0.03125rem;
+	background: #fff;
+}
+.mine_list{
+	width:100%;
+	height: 2.1875rem;
+	border-bottom: solid 0.3125rem #efefef;
+	display: flex;
+}
+.mine_list>div>span{
+	width: 100%;
+	text-align: center;
+}
+.mine_list>div{
+	width:25%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.mine_func{
+	width:100%;
+	height:3.09375rem;
+	border-bottom: solid 0.015625rem #efefef;
+	display: flex;
+}
+.mine_func>div>span{
+	width: 100%;
+	text-align: center;
+}
+.mine_func>div{
+	width:25%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.mine_func2{
+	width:100%;
+	height:3.09375rem;
+	border-bottom: solid 0.9375rem #efefef;
+	display: flex;
+}
+.mine_func2>div>span{
+	width: 100%;
+	text-align: center;
+}
+.mine_func2>div{
+	width:25%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}

@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="./css/reserve.css"/>
+<div class="res_head" ng-controller="reserveCtrl">
+	<p>新鲜预定</p>
+</div>
+<div class="res_select">
+	<ul class="select_ul" >
+		<li ng-repeat="l in jlist track by $index" ng-click="getData(l,$index)" ng-class="$index==num?'bott':''">
+			{{l}}
+		</li>
+	</ul>
+</div>
+<div class="res_body">
+	<div class="res_title">
+		<div class="res_line"></div>
+		<div class="res_fruit"><span>精选水果</span></div>
+	</div>
+	<div class="res_inner">
+		<div class="inner_list" ng-repeat="i in shuju">
+			<div class="res_img">
+				<img src="{{i.img}}"/>
+			</div>
+			<div class="res_right">
+				<div class="ri_name">{{i.name}}</div>
+				<div class="ri_g">{{i.specifics}}</div>
+				<div class="ri_money">
+					<span class="money1">￥</span>
+				    <span class="money2">{{i.price}}</span>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,51 @@
+<div class="market_inner" ng-controller='marketCtrl' >
+	<div class="mar_left">
+		<div class="left_body">
+			<div ng-click='getData(i,$index)'  ng-repeat='i in list track by $index' ng-class="$index==num?'active':''">
+				{{i}}
+			</div>
+		</div>
+	</div>
+<div class="mar_right">
+	<div class="market_head">
+		<div><span>全部分类</span></div>
+		<div class="mar_line"></div>
+		<div><span>综合排序</span></div>
+	</div>
+	<div class="right_body">
+		<div ng-repeat="i in goods[text]" style="position: relative;">
+			<div class="right_body_img">
+				<img ng-src="{{i.img}}"/>
+			</div>
+			<div class="right_body_text">
+				<div class="right_byt_name">{{i.name}}</div>
+				<div >
+					<div class="select">
+						<span>精选</span>
+					</div>
+					<div class="discount">
+						<span>{{i.pm_desc}}</span>
+					</div>
+				</div>
+				<div class="right_btext_g">{{i.specifics}}</div>
+				<div class="right_price">
+					<span style="color: #ff3800;">￥{{i.market_price}}</span>
+					<span style="color: #999999 ;">￥{{i.price}}</span>
+				</div>
+			</div>
+			<div class="m_num">
+				<div class="nums" ng-show="i.num>0" ng-click="compute(i,-1)">
+					<span>-</span>
+				</div>
+				<div>
+					<span ng-show="i.num>0">{{i.num}}</span>
+				</div>
+				<div class="nums" ng-click="compute(i,1)">
+					<span>+</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+

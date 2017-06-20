@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>爱鲜蜂</title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.13.3/ui-bootstrap.min.js"></script>  
+<script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.13.3/ui-bootstrap-tpls.min.js"></script> 
+		<script src="lib/angular-route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/servers.js" type="text/javascript" charset="utf-8"></script>
+		<script src="home/home.js" type="text/javascript" charset="utf-8"></script>
+		<script src="market/market.js" type="text/javascript" charset="utf-8"></script>
+		<script src="reserve/reserve.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mine/mine.js" type="text/javascript" charset="utf-8"></script>
+        <script src="cart/cart.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="js/swiper.min.js" ></script>
+        <style>
+        	 .swiper-container {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+        </style>
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="header">
+				<div class='erma'>
+					<img src="img/main_header_scan_btn_dark.png" />
+					<span>扫一扫</span>
+				</div>
+				<div class='title'>
+					<span>济源路附近</span>
+				</div>
+				<div class='sousuo'>
+					<img src="img/main_header_search_btn_dark.png" />
+					<span>搜索</span>
+				</div>
+			</div>
+			
+             <div ng-view>
+             	
+             </div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!--底部-->
+			<div class="footer">
+				<ul>
+					<li>
+						<div class="foot_img">
+							<img src="img/main_menu_home_selected.png" />
+						</div>
+						<a href="#home">首页</a>
+					</li>
+					<li>
+						<div class="foot_img">
+							<img src="img/main_menu_order_unselected.png" />
+						</div>
+						<a href="#market">闪送超市</a>
+					</li>
+					<li>
+						<div class="foot_img">
+							<img src="img/main_menu_preorder_unselected.png" />
+						</div>
+						<a href="#reserve" >新鲜预定</a>
+					</li>
+					<li>
+						<div class="foot_img">
+							<img src="img/main_menu_cart_unselected.png" />
+						</div>
+						<a href="#cart">购物车</a>
+					</li>
+					<li>
+						<div class="foot_img">
+							<img src="img/main_menu_my_unselected.png" />
+						</div>
+						<a href="#mine">我的</a>
+					</li>
+				</ul>
+			</div>
+
+	</body>
+
+</html>
